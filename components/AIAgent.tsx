@@ -174,6 +174,23 @@ export default function AIAgent() {
     const userMsg: Message = { role: "user", content: text };
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
+
+    // Easter egg 💚
+    const normalized = text.trim().toLowerCase().replace(/[^a-z\s]/g, "");
+    if (normalized === "i love you" || normalized === "i love you vaibhav") {
+      setTimeout(() => {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "assistant",
+            content:
+              "I love you too, Avani 💚\n\nVaibhav told me to say that if you ever found this. You're the reason he still smiles even after a 3am debugging session. He's lucky to have you. 🤍",
+          },
+        ]);
+      }, 600);
+      return;
+    }
+
     setLoading(true);
 
     try {

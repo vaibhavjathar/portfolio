@@ -60,7 +60,7 @@ export default function Experience() {
 
               <ul className="flex flex-col gap-3">
                 {job.bullets.map((bullet, j) => (
-                  <li key={j} className="flex gap-3 text-sm text-[var(--foreground)]/70">
+                  <li key={j} className="flex gap-3 text-base text-[var(--foreground)]/70">
                     <span className="text-[var(--accent)] mt-0.5 shrink-0">→</span>
                     <span>{bullet}</span>
                   </li>

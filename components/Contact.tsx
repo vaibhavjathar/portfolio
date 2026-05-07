@@ -222,7 +222,7 @@ export default function Contact() {
         className="mt-8"
       >
         <a
-          href="/resume.pdf"
+          href="/Vaibhav_s_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 font-mono text-xs px-4 py-2 rounded-sm border transition-all duration-200 group"

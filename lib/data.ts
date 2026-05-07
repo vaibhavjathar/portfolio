@@ -1,7 +1,7 @@
 export const OWNER = {
   name: "Vaibhav Jathar",
   title: "AI Systems Engineer",
-  location: "Prayagraj, India (MNNIT) / Pune, India",
+  location: "Pune, India",
   email: "vaibhavjathar287@gmail.com",
   github: "https://github.com/vaibhavjathar",
   linkedin: "https://www.linkedin.com/in/vaibhavjathar/",
@@ -12,21 +12,58 @@ export const OWNER = {
 
 export const ABOUT = {
   paragraphs: [
-    "I am an AI systems engineer based in Pune, India, with a deep obsession for building intelligent systems that actually run in production — not proof-of-concepts, not Jupyter notebooks, but fault-tolerant AI that ships with measurable outcomes.",
-    "My path into applied AI started with a simple frustration: most AI systems look impressive in demos and fall apart in the real world. That gap is what I'm drawn to close. I went deep on LangGraph orchestration, RAG pipelines, edge ML, and agentic workflows — not to learn the theory, but to understand exactly where systems break and how to engineer them so they don't.",
-    "When I'm not architecting agents or debugging inference pipelines, I'm on the football pitch. I've coordinated teams, led squads to podium finishes, and learned that the same instincts that make a good goalkeeper — read the situation, commit fully, never panic under pressure — apply surprisingly well to production systems at 3am.",
+    "I am an Applied AI Engineer currently architecting PyTorch-driven Clinical Decision Support Systems (CDSS) at Rises Analytics Solutions. My day-to-day focuses on building full-stack medical imaging pipelines that securely accelerate radiology workflows.",
+    "My engineering philosophy is simple: I build intelligent systems that survive the real world. Driven by the frustration of AI that only works in isolated demos, I specialize in the space where machine learning meets scalable software. Whether I am orchestrating sub-second LangGraph agents or shrinking edge-AI models down to 860 KB for memory-constrained IoT devices, my goal is always to ship fault-tolerant AI with measurable outcomes—leaving the fragile Jupyter notebooks behind.",
+    "Off the keyboard, I am a football goalkeeper and team coordinator. Leading squads to podium finishes taught me early on that my best instincts on the pitch—reading the field, committing decisively, and staying calm under pressure—are the exact same skills I rely on to debug complex inference pipelines at 3 AM.",
   ],
   techStack: [
-    { label: "AI & Agents", items: "LangGraph, LangChain, Groq, OpenAI, Gemini, CrewAI, FAISS, Pydantic" },
-    { label: "Backend", items: "FastAPI, Next.js, Node.js, PostgreSQL, Firebase, Convex, Redis" },
-    { label: "ML & Edge", items: "Scikit-learn, OpenCV, NumPy, Pandas, ONNX, Edge ML, TF-IDF" },
-    { label: "Frontend", items: "React, TypeScript, Tailwind CSS, Framer Motion" },
-    { label: "Infrastructure", items: "Docker, GitHub Actions, Vercel, Render, Git" },
-    { label: "Currently Exploring", items: "LLM fine-tuning, reasoning models, agentic memory, real-time inference" },
+    {
+      label: "AI & Agents",
+      items:
+        "LangGraph, LangChain, Groq, OpenAI, Gemini, CrewAI, FAISS, Pydantic",
+    },
+    {
+      label: "ML & Edge",
+      items:
+        "PyTorch (TorchXRayVision), Scikit-learn, OpenCV, NumPy, Pandas, ONNX, Edge ML, TF-IDF",
+    },
+    {
+      label: "Domain Expertise",
+      items:
+        "Medical Imaging Standards (DICOM, PACS), Clinical Decision Support Systems (CDSS)",
+    },
+    {
+      label: "Backend",
+      items: "FastAPI, Next.js, Node.js, PostgreSQL, Firebase, Convex, Redis",
+    },
+    {
+      label: "Frontend",
+      items: "React, TypeScript, Tailwind CSS, Framer Motion, OHIF Viewer v3",
+    },
+    {
+      label: "Infrastructure",
+      items: "Docker, GitHub Actions, Vercel, Render, Git",
+    },
+    {
+      label: "Currently Exploring",
+      items:
+        "LLM fine-tuning, reasoning models, agentic memory, real-time inference",
+    },
   ],
 };
 
 export const EXPERIENCE = [
+  {
+    company: "Rises Analytics Solutions Pvt Ltd",
+    role: "Applied AI Intern",
+    period: "May 2026 – Present",
+    location: "Pune, Maharashtra (Remote)",
+    bullets: [
+      "Architected a full-stack Clinical Decision Support System (CDSS) integrating a PyTorch DenseNet121 model with FastAPI and React, enabling multi-label detection across 14 respiratory pathologies with confidence-based triage.",
+      "Built a custom OHIF v3 Viewer extension to process DICOM images, leveraging Groq LLM (LLaMA3) to auto-generate structured, clinical-grade TRAP (Triage, Risk, Assessment, Plan) reports for accelerated radiology workflows.",
+      "Engineered a real-time diagnostic workflow, integrating the Web Speech API for seamless voice dictation and automating one-click DICOM Structured Report (SR) generation to ensure secure local patient data persistence.",
+    ],
+  },
   {
     company: "Savla Associates",
     role: "Software Developer Intern",
@@ -52,15 +89,18 @@ export const BATTLE_LOG = {
   achievements: [
     {
       title: "Bronze Medal — SPARDHA '24 National Sports Festival",
-      description: "Led MNNIT FC as Coordinator & Team Goalkeeper to a podium finish at the national inter-college sports festival.",
+      description:
+        "Led MNNIT FC as Coordinator & Team Goalkeeper to a podium finish at the national inter-college sports festival.",
     },
     {
       title: "Marketing Head — E-Cell, MNNIT",
-      description: "Directed marketing for flagship entrepreneurial summits, securing Lakhs in corporate sponsorships and driving a 5% increase in attendee engagement.",
+      description:
+        "Directed marketing for flagship entrepreneurial summits, securing Lakhs in corporate sponsorships and driving a 5% increase in attendee engagement.",
     },
     {
       title: "Coordinator & Team Goalkeeper — MNNIT FC",
-      description: "Managed match logistics, training schedules, and team operations for the official MNNIT football club.",
+      description:
+        "Managed match logistics, training schedules, and team operations for the official MNNIT football club.",
     },
   ],
 };
@@ -83,7 +123,8 @@ export const PROJECTS: Project[] = [
     description:
       "A 100% offline hierarchical edge AI pipeline that maps natural language commands to CamelCase IoT SDK function names — squeezed under 860KB with sub-millisecond CPU inference, with an OOD reject gate that guarantees zero catastrophic hardware misfires.",
     tags: ["Python", "Scikit-learn", "NLP", "Edge AI", "TF-IDF"],
-    github: "https://github.com/vaibhavjathar/IoT_Wearable_Function_Name_Predictor",
+    github:
+      "https://github.com/vaibhavjathar/IoT_Wearable_Function_Name_Predictor",
     thumbnail: "iot",
     featured: true,
   },
@@ -102,7 +143,15 @@ export const PROJECTS: Project[] = [
     title: "Enterprise AI Support Orchestrator",
     description:
       "A 7-node autonomous LangGraph DAG agent that slashes enterprise support triage from 24 hours to under 5 seconds at 92% accuracy — fault-tolerant FAISS RAG with graceful degradation, strict Pydantic schemas that eliminate LLM JSON hallucinations, and a Streamlit dashboard with Plotly analytics for human-in-the-loop escalation.",
-    tags: ["LangGraph", "FAISS", "FastAPI", "Groq", "Pydantic", "Streamlit", "SQLAlchemy"],
+    tags: [
+      "LangGraph",
+      "FAISS",
+      "FastAPI",
+      "Groq",
+      "Pydantic",
+      "Streamlit",
+      "SQLAlchemy",
+    ],
     github: "https://github.com/vaibhavjathar/customer-support-email-agent",
     thumbnail: "email",
     featured: true,
@@ -113,7 +162,8 @@ export const PROJECTS: Project[] = [
     description:
       "A PP-FedRL framework where distributed network clients collaboratively train an optimal threat-response policy without ever sharing raw traffic data — combining federated learning and reinforcement learning for privacy-first anomaly detection.",
     tags: ["Federated Learning", "Reinforcement Learning", "Python", "Privacy"],
-    github: "https://github.com/vaibhavjathar/PRIVACY-PRESERVING-FEDERATED-REINFORCEMENT-LEARNING-FOR-ANOMALY-RESPONSE",
+    github:
+      "https://github.com/vaibhavjathar/PRIVACY-PRESERVING-FEDERATED-REINFORCEMENT-LEARNING-FOR-ANOMALY-RESPONSE",
     thumbnail: "federated",
   },
   {
@@ -183,6 +233,11 @@ Vaibhav Jathar is a 21-year-old AI systems engineer graduating from MNNIT Prayag
 - Class X, Kendriya Vidyalaya Southern Command, Pune — CBSE 2020
 
 ## WORK EXPERIENCE
+Rises Analytics Solutions Pvt Ltd — Applied AI Intern (May 2026 – Present, Remote / Pune, Maharashtra)
+- Architected a full-stack Clinical Decision Support System (CDSS) using PyTorch, FastAPI, and React for detecting 14 respiratory pathologies.
+- Built a custom OHIF v3 Viewer extension with Groq LLM (LLaMA3) to auto-generate clinical TRAP reports.
+- Engineered a real-time diagnostic workflow with Web Speech API for voice dictation and DICOM SR generation.
+
 Savla Associates — Software Developer Intern (June–July 2025, Pune, Maharashtra)
 - Built the firm's first responsive corporate website (Next.js + Tailwind CSS) → estimated 30% increase in inbound client inquiries
 - Built a dynamic Life Insurance calculator with a Firebase backend → saved senior associates 5+ hours/week in manual consultations

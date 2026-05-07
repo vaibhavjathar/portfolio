@@ -35,9 +35,9 @@ export default function BattleLog() {
                 style={{ borderLeftColor: "var(--accent)", background: "var(--surface)" }}
               >
                 <div className="flex flex-col gap-1">
-                  <p className="font-semibold text-sm leading-snug">{cert.title}</p>
-                  <p className="font-mono text-xs text-[var(--foreground)]/50">{cert.issuer}</p>
-                  <p className="font-mono text-xs text-[var(--accent)]/70">{cert.date}</p>
+                  <p className="font-semibold text-base leading-snug">{cert.title}</p>
+                  <p className="font-mono text-sm text-[var(--foreground)]/50">{cert.issuer}</p>
+                  <p className="font-mono text-sm text-[var(--accent)]/70">{cert.date}</p>
                 </div>
               </motion.div>
             ))}
@@ -61,8 +61,8 @@ export default function BattleLog() {
                 style={{ borderLeftColor: "var(--accent)", background: "var(--surface)" }}
               >
                 <div className="flex flex-col gap-1">
-                  <p className="font-semibold text-sm leading-snug">{item.title}</p>
-                  <p className="text-xs text-[var(--foreground)]/55 leading-relaxed">{item.description}</p>
+                  <p className="font-semibold text-base leading-snug">{item.title}</p>
+                  <p className="text-sm text-[var(--foreground)]/55 leading-relaxed">{item.description}</p>
                 </div>
               </motion.div>
             ))}

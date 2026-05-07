@@ -5,7 +5,10 @@ import { ABOUT, OWNER } from "@/lib/data";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 md:px-12 lg:px-20 max-w-5xl mx-auto">
+    <section
+      id="about"
+      className="py-24 px-6 md:px-12 lg:px-20 max-w-5xl mx-auto"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -13,8 +16,12 @@ export default function About() {
         transition={{ duration: 0.5 }}
         className="mb-14"
       >
-        <p className="font-mono text-xs text-[var(--accent)] tracking-widest mb-3">ABOUT</p>
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">About Me</h2>
+        <p className="font-mono text-xs text-[var(--accent)] tracking-widest mb-3">
+          ABOUT
+        </p>
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+          About Me
+        </h2>
       </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -27,7 +34,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="text-[var(--foreground)]/70 leading-relaxed"
+              className="text-lg text-[var(--foreground)]/70 leading-relaxed"
             >
               {p}
             </motion.p>
@@ -51,8 +58,10 @@ export default function About() {
                 ["Education", OWNER.education],
                 ["Currently", OWNER.seeking],
               ].map(([label, value]) => (
-                <li key={label} className="flex gap-3 text-sm font-mono">
-                  <span className="text-[var(--foreground)]/40 min-w-[90px]">{label}</span>
+                <li key={label} className="flex gap-3 text-base font-mono">
+                  <span className="text-[var(--foreground)]/40 min-w-[90px]">
+                    {label}
+                  </span>
                   <span className="text-[var(--foreground)]/80">{value}</span>
                 </li>
               ))}
@@ -84,7 +93,7 @@ export default function About() {
                 <span className="font-mono text-xs text-[var(--accent)]/70 tracking-wide">
                   {category.label}
                 </span>
-                <span className="text-sm text-[var(--foreground)]/70">
+                <span className="text-base text-[var(--foreground)]/70">
                   {category.items}
                 </span>
               </motion.li>

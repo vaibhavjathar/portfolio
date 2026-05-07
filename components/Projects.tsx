@@ -68,7 +68,7 @@ function ProjectCard({ project, index }: { project: (typeof PROJECTS)[0]; index:
           )}
         </div>
 
-        <p className="text-xs text-[var(--foreground)]/60 leading-relaxed flex-1">
+        <p className="text-sm text-[var(--foreground)]/60 leading-relaxed flex-1">
           {project.description}
         </p>
 

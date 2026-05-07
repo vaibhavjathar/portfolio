@@ -22,7 +22,7 @@ const SECTION_PROMPTS: Record<string, string> = {
 };
 
 const PROACTIVE_GREETING =
-  "Hey! I'm VAI — Vaibhav's AI. Want me to walk you through his best projects or answer any questions?";
+  "Hey! I'm V.ai — Vaibhav's AI. Want me to walk you through his best projects or answer any questions?";
 
 function scrollToSection(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -177,14 +177,14 @@ export default function AIAgent() {
 
     // Easter egg 💚
     const normalized = text.trim().toLowerCase().replace(/[^a-z\s]/g, "");
-    if (normalized === "i love you" || normalized === "i love you vaibhav") {
+    if (normalized === "i love you" || normalized === "i love you bhav") {
       setTimeout(() => {
         setMessages((prev) => [
           ...prev,
           {
             role: "assistant",
             content:
-              "I love you too, Avani 💚\n\nVaibhav told me to say that if you ever found this. You're the reason he still smiles even after a 3am debugging session. He's lucky to have you. 🤍",
+              "I love you too, Avani 💚\n\nbhav told me to say that if you ever found this. You're the reason he still smiles even after a 3am debugging session. He's lucky to have you. 🤍",
           },
         ]);
       }, 600);
@@ -350,7 +350,7 @@ export default function AIAgent() {
               />
               <div>
                 <div className="flex items-center gap-1.5">
-                  <p className="font-mono text-xs font-semibold text-[var(--foreground)]">VAI</p>
+                  <p className="font-mono text-xs font-semibold text-[var(--foreground)]">V.ai</p>
                   <span className="font-mono text-[9px] text-[var(--accent)]/60 tracking-widest">·VAIBHAV&apos;S AI</span>
                 </div>
                 <p className="font-mono text-[10px] text-[var(--foreground)]/40">

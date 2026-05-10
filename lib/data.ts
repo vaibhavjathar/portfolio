@@ -20,21 +20,21 @@ export const ABOUT = {
     {
       label: "AI & Agents",
       items:
-        "LangGraph, LangChain, Groq, OpenAI, Gemini, CrewAI, FAISS, Pydantic",
+        "LangGraph / LangChain, CrewAI, Groq, OpenAI, Gemini, FAISS, Pydantic",
     },
     {
-      label: "ML & Edge",
+      label: "ML & Edge AI",
       items:
-        "PyTorch (TorchXRayVision), Scikit-learn, OpenCV, NumPy, Pandas, ONNX, Edge ML, TF-IDF",
+        "PyTorch (TorchXRayVision), Scikit-learn, OpenCV, NumPy / Pandas, Edge ML, TF-IDF",
     },
     {
       label: "Domain Expertise",
       items:
-        "Medical Imaging Standards (DICOM, PACS), Clinical Decision Support Systems (CDSS)",
+        "Medical Imaging Standards (DICOM, PACS), XAI, Clinical Decision Support Systems (CDSS)",
     },
     {
       label: "Backend",
-      items: "FastAPI, Next.js, Node.js, PostgreSQL, Firebase, Convex, Redis",
+      items: "FastAPI, React.js / Next.js, Node.js, PostgreSQL, Redis",
     },
     {
       label: "Frontend",
@@ -47,7 +47,7 @@ export const ABOUT = {
     {
       label: "Currently Exploring",
       items:
-        "LLM fine-tuning, reasoning models, agentic memory, real-time inference",
+        "LLM fine-tuning, reasoning models,Agentic AI, Edge AI, Physical AI, AI in HealthCare",
     },
   ],
 };

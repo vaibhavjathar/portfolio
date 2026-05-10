@@ -1,13 +1,13 @@
 export const OWNER = {
   name: "Vaibhav Jathar",
   title: "AI Systems Engineer",
-  location: "Pune, India",
+  location: "Pune, Maharashtra, India",
   email: "vaibhavjathar287@gmail.com",
   github: "https://github.com/vaibhavjathar",
   linkedin: "https://www.linkedin.com/in/vaibhavjathar/",
   education: "B.Tech Computer Science, MNNIT Prayagraj (May 2026)",
-  languages: "English, Hindi",
-  seeking: "AI/ML Internships & Full-Time Roles",
+  languages: "English, Hindi, Marathi",
+  seeking: "Applied AI, Agentic AI, AI/ML Internships & Full-Time Roles",
 };
 
 export const ABOUT = {
